@@ -9,20 +9,20 @@ idadeMinimaMenores = 0
 
 print("")
 name = input("Escreva seu Nome: ")
-print("Aoba, " + name + "!")
 idade = int(input("Insira sua idade: "))
-print("Você tem " + str(idade) + " anos!")
+print("Você tem " + str(idade) + " anos, " + name + "!")
 print("")
-print("================================")
-print("")
-
-print("Aqui estão os filmes disponíveis para maiores de " + str(idadeMinima18) + " anos:")
-print(filmes18)
-print("")
-print("================================")
+print("================================P")
 print("")
 
-print("Aqui estão os filmes disponíveis para menores de " + str(idadeMinimaMenores) + " anos:")
+if(idade >= idadeMinima18):
+    print("Aqui estão os filmes disponíveis para maiores de " + str(idadeMinima18) + " anos:")
+    print(filmes18)
+    print("")
+    print("================================")
+    print("")
+
+print("Aqui estão os filmes disponíveis para todas as idades:")
 print(filmesMenores)
 print("")
 print("================================")
